@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>org.json.plusin.createjson</id>
+  <name>CreateJson</name>
+  <version>1.0</version>
+  <vendor email="yiye_qiu@126.com" url="https://www.nobody.com">NoBody</vendor>
+
+  <description>my first plus create at 20220115,by liuwei8 框架部分代码借鉴GsonFormat-Plus </description>
+
+  <change-notes> </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <group id="createjson" text="My Menu" description="ext menus">
+      <add-to-group group-id="MainMenu" anchor="last" />
+      <action id="myAction" class="org.json.plusin.MyAction" text="createjson" description="createjson">
+        <keyboard-shortcut keymap="$default" first-keystroke="alt p" />
+      </action>
+    </group>
+  </actions>
+
+</idea-plugin>
